@@ -1,183 +1,214 @@
 * {
     box-sizing: border-box;
   }
-
-
+  
   body {
-      margin: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  header h1,
+  .h3-header {
+    font-size: 16px;
+  }
+  
+  .sidebar {
+    background-color: rgb(211, 31, 211);
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+  }
+
+  .socialcontainers {
+      display: flex;
+      flex-direction: column;
+  }
+  
+
+  .social-container {
+    display: flex;
+    border: 1px solid grey;
+    height: 70px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+  }
+  
+  .socialicons {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .social-image {
+    color: orchid;
+
+  }
+  
+  .icons {
+    width: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 7px;
+  }
+  
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 180px;
+  }
+  
+  hr {
+    width: 60px;
+    rotate: 90deg;
+  }
+  
+  
+  .bell {
+    width: 28px;
+    height: auto;
+  }
+  
+  .mypic {
+    width: 35px;
+    height: auto;
+    margin-right: 8px;
+    border-radius: 50%;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 60px;
+    height: auto;
+  }
+  
+
+  .social-text {
+      color: orchid;
   }
 
 
 
+  .members-container,
+  .rec-activity {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      border-bottom: 1px solid gray;
+  }
+  
+  .widget-container {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid grey;
+  }
 
-header {
-    background-color: purple;
-    margin: 0;
+  #userField,
+  #messageField,
+  #send {
+      margin: 10px;
+      border: 1px solid gray;
+      border-radius: 5px;
+  }
+
+  #userField {
+      height: 50px;
+  }
+
+  #messageField {
+      height: 200px;
+  }
+ 
+  #send {
+      height: 50px;
+      background-color: darkorchid;
+  }
+
+#timezone {
+    width: 300px;
+    height: 30px;
+}
+
+.settings-button {
     display: flex;
     flex-direction: row;
-    max-width: auto;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+#save {
+    margin: 20px;
+    background-color: darkorchid;
+
 }
 
-.sidebar {
-    background-color: rgb(211, 31, 211);
-    width: 50px;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-   
-}
-.socialcontainers {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+#cancel {
+    margin: 20px;
 }
 
-.social-container {
-    display: flex;
-    border: 1px solid grey;
-    width: 200px;
-    height: auto;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.socialicons {
-    width: 50px;
-    height: auto;
-    border-radius: 50%;
-}
-.icons {
-    width: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 7px;
-}
-
-.webapp-header {
-    margin-left: 10px;
-}
-.section-header {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    margin-right: 10px;
-    width: 300px;
-    justify-content: space-around;
-}
-
-hr {
-    width: 60px;
-    rotate: 90deg;
-}
-
-.h3-header {
-    margin-left: 10px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "header"
-        "navigation"
-        "main";
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: 55px 1fr;
+      grid-template-areas:
+        "header header"
+        "navigation main";
+    }
+  
+  
+    .socialcontainers {
+        display: flex;
+        flex-direction: row;
     }
     .header {
       grid-area: header;
     }
+  
     .navigation {
       grid-area: navigation;
     }
+  
     .main {
       grid-area: main;
     }
+  
     .main {
-        display: grid;
-      }
-     
-
-      .widget-container-full, .widget-container-half {
-        width: 95vw;
+      display: grid;
     }
-    @media (min-width: 768px) {
-        .widget-container-full {
-            width: 90vw;
-        }
-        .widget-container-half {
-            width: 45vw;
-    } }
-
-.bell {
-    width: 50px;
-    height: auto;
-}
-
-.mypic {
-    width: 50px;
-    height: auto;
-    border-radius: 50%;
-}
-
-.profile-image {
-    border-radius: 50%;
-    width: 60px;
-    height: auto;
-}
-
-.newmemberssection {
-    border: 1px solid gray;
-}
-
-#newrecent{
-    display: flex;
-    float: left;
-}
-
-
-
-
-
-
-
-
-    
-    @media (min-width: 768px) {
-      .grid-container {
-        grid-template-columns: 55px 1fr;
-        grid-template-areas:
-            "header header"
-            "navigation main";
-    }
-}
-
-    @media (min-width: 768px) {
-        .main {
-            grid-template-columns: 50% ;
-  }
-}
-
-@media (min-width: 768px) {
-    .traffic, .social {
-} }
-
-@media (min-width: 768px) {
-    .daily, .members, .message {
-        grid-column: 1 / span 1;
-} }
-
-@media (min-width: 768px) {
-    .mobile, .activity, .settings  {
-        grid-column: 2 / span 1;
-    }
-}
-
-@media (min-width: 768px) {
+ 
     .widget-container-full {
-        width: 90vw;
+      width: 90vw;
     }
+  
     .widget-container-half {
-        width: 45vw;
-} }
+      width: 45vw;
+    }
+  
+  
+    .main {
+      grid-template-columns: 50%;
+    }
+  
+    .daily,
+    .members,
+    .message {
+      grid-column: 1 / span 1;
+    }
+  
+    .mobile,
+    .activity,
+    .settings {
+      grid-column: 2 / span 1;
+    }
+  
+  }
