@@ -30,8 +30,9 @@
   }
 
   .socialcontainers {
-      display: flex;
+      display: grid;
       flex-direction: column;
+      grid-column: 1 / span 2;
   }
   
 
@@ -157,8 +158,22 @@
     margin: 20px;
 }
 
+#alert {
+    background-color: rgb(144, 0, 255);
+    color: black;
+    box-shadow: 5px 5px 2px gray inset;
+}
+
+#newrecent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
   @media (min-width: 768px) {
     .grid-container {
+      display: grid;
       grid-template-columns: 55px 1fr;
       grid-template-areas:
         "header header"
@@ -169,6 +184,12 @@
     .socialcontainers {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+       
+    }
+
+    .social-container {
+        width: 300px;
     }
     .header {
       grid-area: header;
@@ -197,6 +218,7 @@
   
     .main {
       grid-template-columns: 50%;
+      margin: 20px;
     }
   
     .daily,
@@ -209,6 +231,18 @@
     .activity,
     .settings {
       grid-column: 2 / span 1;
+    }
+   
+.main-header {
+    margin-left: 20px;
+}
+
+    .sidebar {
+        display: flex;
+        justify-content: flex-start;
+        height: auto;
+        width: 60px;
+        flex-direction: column;
     }
   
   }
