@@ -124,4 +124,5 @@ const dailyData =  {
       alert(`Message successfully sent to: ${user.value}`);
   } });
 
+
   
