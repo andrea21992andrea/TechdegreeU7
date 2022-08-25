@@ -335,6 +335,7 @@ animation: pulse 1s ease-in-out;
       height: 150px;
       width: 95%;
       text-align: center;
+      font-size: .7rem;
   }
   
   .members-container img,
@@ -363,14 +364,7 @@ animation: pulse 1s ease-in-out;
   .activity-container:nth-of-type(4) {
       border-bottom: none;
   }
-  
-  .date {
-    margin: 5px;
-  }
-  
-  .recdate {
-      display: none;
-  }
+
 
   /*Messaging Widget*/
  
@@ -416,7 +410,6 @@ animation: pulse 1s ease-in-out;
     background-color: #7477BF;
     color: white;
     border: none;
-    margin-bottom: 10px;
     border-radius: 5px;
     font-size: 20px;
 }
@@ -509,11 +502,6 @@ strong {
 }
 
  /*aqui*/
-
-footer {
-    text-align: center;
-}
-
 /* Media Queries */
 
 @media (min-width: 768px) {
@@ -620,7 +608,7 @@ footer {
 
     .members,
     .rec-activity {
-      width: 50%;
+      width: 100%;
     }
     
     .members-container {
@@ -647,6 +635,7 @@ footer {
     .date {
       grid-area: date;
       text-align: right;
+      margin: 5px;
     }
 
     .activity-container {
