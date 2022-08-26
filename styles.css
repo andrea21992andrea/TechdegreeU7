@@ -79,9 +79,9 @@ position: relative;
 margin-bottom: 20px;
 }
 
-.bell svg:hover {
+/*.bell svg:hover {
 animation: pulse 1s ease-in-out;
-}
+}*/
 
   .sidebar {
     grid-area: navigation;
@@ -107,6 +107,30 @@ animation: pulse 1s ease-in-out;
     width: 180px;
   }
 
+  @keyframes grow {
+      0% {
+          transform: scale(0);
+      }
+      30% {
+          transform: scale(1.1);
+      }
+      60% {
+          transform: scale(0.9);
+      }
+  }
+
+
+.bellsvg  {
+    /*
+    stroke-width: 2;
+    stroke-dasharray: 5;
+    stroke-dashoffset: 50;*/
+    animation: grow 4s linear forwards;
+}
+
+.bellsvg:hover {
+    fill: #9d74b3;
+}
   
   /*TAB*/
 
@@ -555,6 +579,21 @@ strong {
       width: 100%;
     }
 
+    .mobile-users {
+      border-bottom: 1px solid #757575;
+    }
+
+    .mobile-users h3 {
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .daily h3 {
+        margin-top: 20px;
+        margin-bottom: 22px;
+    }
+
     .daily {
       border-right: 1px solid #999999;
       padding-bottom: 1px;
@@ -703,9 +742,18 @@ strong {
     border-right: 1px solid #999999;
   }
 
+
+  .members,
+  .rec-activity {
+    width: 453.615px;
+  }
+  
+
   .settings {
     height: 100%;
+    width: 495px;
   }
+
 
   .message {
     border-right: 1px solid #999999;
