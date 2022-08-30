@@ -70,6 +70,11 @@ align-items: center;
   fill: aliceblue;
 }
 
+.bell:hover {
+    transform: rotate(25deg);
+
+}
+
 #notifications {
 width: 6px;
 height: 6px;
@@ -128,9 +133,6 @@ animation: pulse 1s ease-in-out;
     animation: grow 4s linear forwards;
 }
 
-.bellsvg:hover {
-    fill: #9d74b3;
-}
   
   /*TAB*/
 
