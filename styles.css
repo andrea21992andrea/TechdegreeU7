@@ -64,10 +64,12 @@ flex-direction: row;
 align-items: center;
 }
 
-.bell svg {
+.bellsvg {
   width: 15px;
   margin: auto 0 auto 10px;
   fill: aliceblue;
+  transition: transform 1s ease-out;
+
 }
 
 
@@ -134,7 +136,6 @@ animation: pulse 1s ease-in-out;
 
 .bell svg:hover {
  transform: rotate(25deg);
- transition: transform 1s ease-out;
 
 }
 
