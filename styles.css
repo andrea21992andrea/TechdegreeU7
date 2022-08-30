@@ -70,10 +70,7 @@ align-items: center;
   fill: aliceblue;
 }
 
-.bell:hover {
-    transform: rotate(25deg);
 
-}
 
 #notifications {
 width: 6px;
@@ -131,6 +128,13 @@ animation: pulse 1s ease-in-out;
     stroke-dasharray: 5;
     stroke-dashoffset: 50;*/
     animation: grow 4s linear forwards;
+    transform-origin: 50% 50%;
+    transition: transform 2s ease-in;
+
+}
+
+.bellsvg:hover {
+ transform: rotate(25deg);
 }
 
   
